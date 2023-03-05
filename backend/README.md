@@ -9,10 +9,15 @@ A simple app built to showcase pocketbase!
 
 ## how to run locally
 
-1. clone this repo
+1. clone this repo and install dependencies if you don't have them:
+    - Install [go-task](https://taskfile.dev/installation/)
+    - Install [Docker](https://docs.docker.com/desktop/install/mac-install/)
+    - Install [pnpm](https://pnpm.io/installation) nor required but recommended
+    - install [flyctl](https://fly.io/docs/hands-on/install-flyctl)
+    
 2. start a local server in the root directory: ```task start```
 3. cd into the ```client``` directory
-4. install dependencies: ```npm install```
+4. install dependencies: ```pnpm install```
 5. set your .env file: ```cp .env.example .env```
 6. start the client: ```npm start```
 

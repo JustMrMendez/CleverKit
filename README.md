@@ -2,6 +2,10 @@
 
 Everything you need to build a Svelte project with a modern toolchain.
 
+## Pre-requisites
+- [go](https://golang.org/) - The Go Programming Language
+- go-task - A task runner / simpler Make alternative written in Go
+- 
 ## Creating a project
 
 Clone this repo and install dependencies:
@@ -53,4 +57,4 @@ You can preview the production build with `npm preview`.
 
 - [x] Dark & Light Mode
 - [x] Authentication with [Pocketbase](https://pocketbase.io/)
-- [x] Easy theming by [Skeleton](https//skeleton.dev/)
+- [x] Easy theming by [Skeleton](https://skeleton.dev/)
