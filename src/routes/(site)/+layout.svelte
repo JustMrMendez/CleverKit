@@ -4,7 +4,7 @@
 </script>
 
 <AppBar
-	padding="p-4 fixed w-full"
+	padding="p-4 w-full"
 	gridColumns="grid-cols-3"
 	slotDefault="place-self-center"
 	slotTrail="place-content-end"
