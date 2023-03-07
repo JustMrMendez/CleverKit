@@ -1,35 +1,30 @@
-# pocketbase-first-impressions
-A simple app built to showcase pocketbase!
+# CleverKit Backend
 
-## USEFUL RESOURCES
+CleverKit is an open-source project built to showcase [Pocketbase](https://pocketbase.io/), a cloud database built for modern applications. It is a simple app that allows users to create and view notes.
 
-- [pocketbase docs](https://docs.pocketbase.io)
-- [fly.io docs](https://fly.io/docs)
-- [hosting pocketbase on fly.io](https://github.com/pocketbase/pocketbase/discussions/537)
+## Useful Resources
 
-## how to run locally
+- [pocketbase docs](https://pocketbase.io/docs/)
+- [fly.io docs](https://fly.io/docs/)
+- [Hosting pocketbase on fly.io](https://fly.io/docs/app-guides/pocketbase/)
 
-1. clone this repo and install dependencies if you don't have them:
-    - Install [go-task](https://taskfile.dev/installation/)
-    - Install [Docker](https://docs.docker.com/desktop/install/mac-install/)
-    - Install [pnpm](https://pnpm.io/installation) nor required but recommended
-    - install [flyctl](https://fly.io/docs/hands-on/install-flyctl)
-    
-2. start a local server in the root directory: ```task start```
-3. cd into the ```client``` directory
-4. install dependencies: ```pnpm install```
-5. set your .env file: ```cp .env.example .env```
-6. start the client: ```npm start```
+## How to Run Locally
 
-## how to deploy to fly.io
+To run the backend server locally, follow these steps:
 
-1. install flyctl: https://fly.io/docs/hands-on/install-flyctl
-2. init the fly app: ```flyctl launch```
-3. create free storage volume: ```flyctl volumes create pb_data --size=1```
-4. update fly.toml with the volume info:
-    ```
-        [mounts]
-            destination = "/pb/pb_data"
-            source = "pb_data"
-    ```
-5. deploy: ```flyctl deploy```
+1. Clone this repository to your local machine.
+2. Install the dependencies by running `pnpm install`.
+3. Start the backend server by running `go run main.go serve --http=127.0.0.1:8080`.
+
+## How to Deploy to fly.io
+
+To deploy the backend server to [fly.io](https://fly.io/), follow these steps:
+
+1. Install [flyctl](https://fly.io/docs/hands-on/install-flyctl).
+2. Initiate the fly app by running `flyctl launch`.
+3. Create a free storage volume by running `flyctl volumes create pb_data --size=1`.
+4. Deploy the backend server by running `flyctl deploy`.
+
+## License
+
+This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
